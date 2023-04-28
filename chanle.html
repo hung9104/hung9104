@@ -12,13 +12,13 @@
     <input type="submit" value="checkresult" onclick="checkresult()">
     <script>
         function checkresult() {
-           let Number = document.getElementById("number");
-           if (Number == '') {
+           let getNumber = document.getElementById("number").value;
+           if (getNumber == '') {
             alert('Input a number');
-           } if (Number % 2 == 0) {
-            alert (Number + 'is an even number');
+           } if (getNumber % 2 == 0) {
+            alert (getNumber + ' is an even number');
            } else {
-            alert (Number + 'is an even number');
+            alert (getNumber + ' is an odd number');
            }
         }
 
