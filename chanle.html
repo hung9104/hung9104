@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Input a number </p>
+    <input type="text" id="number">
+    <input type="submit" value="checkresult" onclick="checkresult()">
+    <script>
+        function checkresult() {
+           let Number = document.getElementById("number");
+           if (Number == '') {
+            alert('Input a number');
+           } if (Number % 2 == 0) {
+            alert (Number + 'is an even number');
+           } else {
+            alert (Number + 'is an even number');
+           }
+        }
+
+    </script>
+</body>
+</html>
