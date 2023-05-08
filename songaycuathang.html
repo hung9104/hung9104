@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let year = +prompt('input year');
+        let month = +prompt('input month');
+        if (year % 4 == 0 && year % 100 != 0) {
+            document.write(' nam ${year} la nam nhuan ');
+            switch(month) {
+                case 1, 3, 5, 7, 8, 10, 12:
+                     document.write('thang ${month} co 31 ngay');
+                     break;
+                case 4, 6, 9, 11:
+                    document.write('thang ${month} co 30 ngay');
+                    break;
+                case 2:
+                    document.write('thang ${month} co 29 ngay');
+                    break;
+            }        
+        } else {
+            document.write('nam ${year} khong la nam nhuan ');
+            switch(month) {
+                case 1, 3, 5, 7, 8, 10, 12:
+                     document.write('thang ${month} co 31 ngay');
+                     break;
+                case 4, 6, 9, 11:
+                    document.write('thang ${month} co 30 ngay');
+                    break;
+                case 2:
+                    document.write('thang ${month} co 29 ngay');
+                    break;
+            }        
+        }
+    </script>
+</body>
+</html>
