@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tính điểm đại học</h1>
+    <div>
+      Môn Toán
+      <input type="text" id="toan" name="toan" />
+    </div>
+
+    <div>
+      Môn Văn
+      <input type="text" id="van" name="van" />
+    </div>
+
+    <div>
+      Môn Anh
+      <input type="text" id="anh" name="anh" />
+    </div>
+
+    <div>
+      Khu Vực
+      <select id="khuvuc">
+        <option value="0.75">KV1</option>
+        <option value="0.5">KV2-NT</option>
+        <option value="0.25">KV2</option>
+        <option value="0">KV3</option>
+      </select>
+    </div>
+
+    <button type="button" id="ketqua" onclick="tinhdiem">Tính Điểm</button>
+    <p id="tongdiem"></p>
+
+    <script>
+      function tinhdiem() {
+      let toan = parseFloat(document.getElementById(toan).value);
+      let van = parseFloat(document.getElementById(van).value);
+      let anh = parseFloat(document.getElementById(anh).value);
+      let khuvuc = document.getElementById(khuvuc).value;
+      let diem = toan + van + anh;
+      switch(khuvuc) {
+        case "0.75":
+            diem += 0.75;
+            break;
+        case "0.5":
+            diem += 0.5;
+            break;
+        case "0.25":
+            diem += 025;
+            break;
+        case "0":
+            diem += 0;
+      }
+      document.getElementById(tongdiem).textContent = 'Tổng Điểm là ${diem}';
+      }
+    </script>
+  </body>
+</html>
