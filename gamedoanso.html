@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="game" onclick="choi">Bắt Đầu</button>
+    <button id="game" onclick="choi()">Bắt Đầu</button>
     <script>
       function choi() {
         document.getElementById("game").innerHTML = "Chơi lại"
@@ -15,8 +15,9 @@
         let socandoan = Math.floor(Math.random()*inputnumber)
         for(i = 1; i < 3; i++) {
           let sodoan = +prompt("Nhập số: ")
-          if (sodoan = socandoan) {
+          if (sodoan == socandoan) {
             alert("Bạn đã đoán đúng")
+            break
           } else {
             alert("Chúc bạn may mắn lần sau")
           }
