@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="game" onclick="choi">Bắt Đầu</button>
+    <script>
+      function choi() {
+        document.getElementById("game").innerHTML = "Chơi lại"
+        let inputnumber = +prompt("Hãy nhập một số: ")
+        let socandoan = Math.floor(Math.random()*inputnumber)
+        for(i = 1; i < 3; i++) {
+          let sodoan = +prompt("Nhập số: ")
+          if (sodoan = socandoan) {
+            alert("Bạn đã đoán đúng")
+          } else {
+            alert("Chúc bạn may mắn lần sau")
+          }
+        }
+      }
+        
+    </script>
+  </body>
+</html>
