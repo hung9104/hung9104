@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tg1 = "";
+      for (i = 0; i < 5; i++) {
+        tg1 += "*";
+        document.write(`${tg1} <br/>`);
+      }
+      let tg2 = "";
+      for (i = 5; i > 0; i--) {
+        for (j = 1; j <= i; j++) {
+          tg2 += "*";
+        }
+        tg2 += "<br/>"
+      }
+      document.write(`${tg2} <br/>`);
+
+    //   let tg3 = ""
+    //   for (i = 0; i < 5; i++) {
+    //     tg3 += "&nbsp;&nbsp;"
+    //     document.write(`&{tg3} <br/>`)
+    //   }
+    </script>
+  </body>
+</html>
